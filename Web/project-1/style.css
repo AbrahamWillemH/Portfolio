@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(2, 72, 67);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.searchBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.searchBtn input {
+    text-align: center;
+    position: relative;
+    background-color: rgba(150, 150, 150, 0.384);
+    margin-top: auto;
+    height:40px;
+    width: 300px;
+    border-radius: 30px;
+    outline: none;
+    box-shadow: none;
+    color: rgba(150, 150, 150, 0.8);
+}
+
+.searchBtn img {
+    position: relative;
+    height: 25px;
+    width: auto;
+    margin-left: 5px;
+}

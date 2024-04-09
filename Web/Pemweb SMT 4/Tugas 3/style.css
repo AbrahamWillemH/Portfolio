@@ -1,0 +1,55 @@
+.btn-maroon {
+    background-color: maroon;
+    color: white;
+}
+.btn-maroon:hover {
+    background-color: rgb(188, 25, 25);
+    color: white;
+}
+body {
+    margin-top: 50px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.table-bordered {
+    border: 2px solid maroon;
+}
+.table {
+    width: 80%; 
+    max-width: 600px; 
+}
+.table-img {
+    width: 100%;
+    height: auto;
+}
+.table-img-cell {
+    width: 150px;
+}
+.small-table th,
+.small-table td {
+    padding: 5px;
+}
+.ornament-top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #5c1212;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+.ornament-bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #5c1212;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    z-index: -1;
+}

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffeebee</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous">
+
+  <style>
+    /* CSS */
+
+    :root {
+      --col-dark: #212529;
+      --col-brand: #dfaf70;
+      --col-brand-light: #e9c28f;
+      --col-body: #727272;
+      --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.075);
+      --transition: all 0.5s ease;
+    }
+
+    body {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      line-height: 1.7;
+      color: var(--col-body);
+    }
+
+    h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+      color: var(--col-dark);
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--col-brand);
+      transition: var(--transition);
+    }
+
+    a:hover {
+      color: var(--col-brand-light);
+    }
+
+    .section-padding {
+      padding-top: 140px;
+      padding-bottom: 140px;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      box-shadow: var(--box-shadow);
+    }
+
+    .navbar-nav .nav-link {
+      margin: 10px;
+      font-weight: 700;
+      color: var(--col-dark);
+      transition: var(--transition);
+    }
+
+    .navbar-brand {
+      margin-top: 7px;
+      font-weight: 700;
+    }
+
+    /* BUTTONS */
+    .btn {
+      font-weight: 700;
+      font-size: 14px;
+      border-radius: 50px;
+      padding: 10px 24px;
+    }
+
+    .btn-buy {
+      width: 200px;
+      background-color: var(--col-brand);
+      border-color: var(--col-brand);
+      outline: none;
+    }
+
+    .btn-buy:hover {
+      background-color: var(--col-brand-light);
+      border-color: var(--col-brand-light);
+      color: white;
+    }
+
+    .btn-abt {
+      width: 150px;
+      background-color: white;
+      border: none;
+      color: black;
+      outline: none;
+    }
+
+    .btn-abt:hover {
+      background-color: rgb(207, 207, 207);
+      color: white;
+    }
+
+    .btn-order {
+      background-color: var(--col-brand);
+      border: none;
+      border-radius: 20px;
+      height: 30px;
+      width: 30px;
+      margin-left: 10px;
+    }
+
+    .btn-order:hover {
+      background-color: var(--col-brand-light);
+      color: white;
+    }
+
+    .btn-checkout {
+      background-color: var(--col-brand);
+      border-color: var(--col-brand);
+      outline: none;
+      margin-top: -5px;
+    }
+
+    .btn-checkout:hover {
+      background-color: var(--col-brand-light);
+      border-color: var(--col-brand-light);
+      color: white;
+    }
+
+    /* HOME */
+    #home {
+      background: linear-gradient(rgba(223, 175, 112, 0.7), rgba(233, 194, 143, 0.3));
+    }
+
+    /* ORDER */
+    #order {
+      background-color: rgba(233, 194, 143, 0.3);
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    
+    .menu-category {
+      margin-bottom: 40px;
+    }
+
+    .list-group-item {
+      font-size: 19px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: transparent;
+    }
+    
+    .order-actions {
+      display: flex;
+      align-items: center;
+    }
+    
+    .order-number {
+      margin: 0 10px;
+      margin-left: 18px;
+      transition: var(--transition);
+    }
+    
+    .checkout {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 100px;
+    }
+
+    .checkout button {
+      margin-left: 15px;
+    }
+
+    /* FOOTER (ABOUT) */
+    #about {
+      background: linear-gradient(rgba(233, 194, 143, 0.3), rgba(223, 175, 112, 0.7));
+    }
+
+    #about .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .table {
+      margin-top: 50px;
+      width: 700px;
+      height: 300px;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <p>COFFEEBEE</p>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#order">Order</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home" class="align-items-center d-flex flex-row text-center min-vh-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="fw-bold display-1">Welcome to Coffeebee</h1>
+          <h5 class="mt-3 mb-5">A Coffee A Day Keeps The Doctor Away!</h5>
+          <a href="#order" class="btn btn-buy">Order Now!</a>
+          <a href="#about" class="btn btn-abt">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORDER -->
+  <section id="order" class="section-padding">
+    <div class="container">
+      <div class="menu-grid">
+        <div class="menu-category">
+          <h5 class="fw-semibold display-2">Coffee</h5>
+          <ul class="list-group list-group-flush">
+
+            <!-- Daftar menu kopi -->
+            <li class="list-group-item">Espresso
+              <div class="order-actions"> Rp18.000
+                <button class="btn-order">-</button>
+                <p class="order-number">0</p>
+                <button class="btn-order">+</button>
+              </div>
+            </li>
+            <li class="list-group-item">Americano
+              <div class="order-actions"> Rp22.000
+                <button class="btn-order">-</button>
+                <p class="order-number">0</p>
+                <button class="btn-order">+</button>
+              </div>
+            </li>
+            <li class="list-group-item">Cappuccino
+              <div class="order-actions"> Rp26.000
+                <button class="btn-order">-</button>
+                <p class="order-number">0</p>
+                <button class="btn-order">+</button>
+              </div>
+            </li>
+            <li class="list-group-item">Latte
+              <div class="order-actions"> Rp26.000
+                <button class="btn-order">-</button>
+                <p class="order-number">0</p>
+                <button class="btn-order">+</button>
+              </div>
+            </li>
+            <li class="list-group-item">Affogato
+              <div class="order-actions"> Rp30.000
+                <button class="btn-order">-</button>
+                <p class="order-number">0</p>
+                <button class="btn-order">+</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-category">
+          <h5 class="fw-semibold display-2">Meal</h5>
+          <ul class="list-group list-group-flush">
+
+            <!-- Daftar menu makanan -->
+            <li class="list-group-item">Chicken Rice Bowl
+              <div class="order-actions">Rp20.000
+                <button class="btn-order">-</button>
+                <p class="order-number">0</p>
+                <button class="btn-order">+</button>
+              </div>
+            </li>
+            <li class="list-group-item">Chicken Katsu
+              <div class="order-actions">Rp20.000
+                <button class="btn-order">-</button>
+                <p class="order-number">0</p>
+                <button class="btn-order">+</button>
+              </div>
+            </li>
+            <li class="list-group-item">Nasi Goreng
+              <div class="order-actions">Rp20.000
+                <button class="btn-order">-</button>
+                <p class="order-number">0</p>
+                <button class="btn-order">+</button>
+              </div>
+            </li>
+            <li class="list-group-item">Indomie Goreng
+              <div class="order-actions">Rp18.000
+                <button class="btn-order">-</button>
+                <p class="order-number">0</p>
+                <button class="btn-order">+</button>
+              </div>
+            </li>
+            <li class="list-group-item">Indomie Rebus
+              <div class="order-actions">Rp18.000
+                <button class="btn-order">-</button>
+                <p class="order-number">0</p>
+                <button class="btn-order">+</button>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="menu-category">
+          <h5 class="fw-semibold display-2">Snacks</h5>
+          <ul class="list-group list-group-flush">
+
+            <!-- Daftar menu snack -->
+            <li class="list-group-item">French Fries
+              <div class="order-actions">Rp12.000
+                <button class="btn-order">-</button>
+                <p class="order-number">0</p>
+                <button class="btn-order">+</button>
+              </div>
+            </li>
+            <li class="list-group-item">Tempe Mendoan
+              <div class="order-actions">Rp15.000
+                <button class="btn-order">-</button>
+                <p class="order-number">0</p>
+                <button class="btn-order">+</button>
+              </div>
+            </li>
+            <li class="list-group-item">Mix Platter
+              <div class="order-actions">Rp20.000
+                <button class="btn-order">-</button>
+                <p class="order-number">0</p>
+                <button class="btn-order">+</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="checkout">
+      <h5>Rp</h5>
+      <h5 class="price">0</h5>
+      <h5>.000</h5>
+      <button class="btn btn-checkout">Checkout!</button>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <footer id="about" class="section-padding min-vh-100">
+    <div class="container">
+      <h1 class="fw-bold"> About Me</h1>
+      <table class="table table-striped table-hover">
+        <th>Nama</th>
+        <td>Abraham Willem Hersubagyo</td>
+        </tr>
+        <tr>
+          <th>NIM</th>
+          <td>L0122002</td>
+        </tr>
+        <tr>
+          <th>Prodi</th>
+          <td>Informatika</td>
+        </tr>
+        <tr>
+          <th>Motivasi</th>
+          <td>Tantangan ada untuk ditantangin</td>
+        </tr>
+        <tr>
+          <th>Harapan</th>
+          <td>Menjadi dampak positif bagi orang disekitar</td>
+        </tr>
+      </table>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var orderButtons = document.querySelectorAll(".btn-order");
+      var priceElement = document.querySelector(".price");
+      var orderNumberElements = document.querySelectorAll(".order-number");
+
+      var checkoutButton = document.querySelector(".checkout button");
+
+      var totalPrice = 0;
+
+      orderButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          var menuItemPrice = parseInt(button.parentElement.textContent.trim().replace("Rp", ""), 10);
+          var orderNumberElement = button.parentElement.querySelector(".order-number");
+          var orderNumber = parseInt(orderNumberElement.textContent.trim(), 10);
+
+          // Menambahkan atau mengurangi jumlah pesanan
+          if (button.textContent === "+") {
+            orderNumber++;
+            totalPrice += menuItemPrice;
+          } else if (button.textContent === "-" && orderNumber > 0) {
+            orderNumber--;
+            totalPrice -= menuItemPrice;
+          }
+
+          orderNumberElement.textContent = orderNumber;
+          priceElement.textContent = totalPrice;
+        });
+      });
+
+      checkoutButton.addEventListener("click", function () {
+        alert("Thank you! Your order is on the way.");
+
+        // Reset total harga apabila tombol checkout ditekan
+        totalPrice = 0;
+        priceElement.textContent = totalPrice;
+        orderNumberElements.forEach(function (element) {
+          element.textContent = "0";
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>

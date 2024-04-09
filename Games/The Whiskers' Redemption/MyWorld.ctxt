@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=MyWorld
+comment1.params=
+comment1.target=int\ getMoney()
+comment10.params=temp
+comment10.target=int\ price(int)
+comment11.params=
+comment11.target=void\ updateScore()
+comment12.params=args
+comment12.target=void\ main(java.lang.String[])
+comment2.params=newMoney
+comment2.target=void\ setMoney(int)
+comment3.params=
+comment3.target=int\ getWorldHealth()
+comment4.params=newWorldHealth
+comment4.target=void\ setNewWorldHealth(int)
+comment5.params=
+comment5.target=MyWorld()
+comment6.params=tmp
+comment6.target=void\ addTroops(int)
+comment7.params=
+comment7.target=void\ delTroops()
+comment8.params=troop
+comment8.target=void\ removeTroop(Troop)
+comment9.params=locX\ locY
+comment9.target=void\ addPrecil(int,\ int)
+numComments=13

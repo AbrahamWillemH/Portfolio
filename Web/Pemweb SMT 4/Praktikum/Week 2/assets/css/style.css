@@ -1,0 +1,177 @@
+@import url(chillax.css);
+
+:root {
+  --col-dark: #212529;
+  --col-brand: #dfaf70;
+  --col-brand-light: #e9c28f;
+  --col-body: #727272;
+  --font-base: "Chillax", sans-serif;
+  --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.075);
+  --transition: all 0.5s ease;
+}
+
+body {
+  font-family: var(--font-base);
+  line-height: 1.7;
+  color: var(--col-body);
+}
+
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6 {
+  color: var(--col-dark);
+}
+
+a {
+  text-decoration: none;
+  color: var(--col-brand);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--col-brand-light);
+}
+
+.section-padding {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+/* NAVBAR */
+.navbar {
+  box-shadow: var(--box-shadow);
+}
+
+.navbar-nav .nav-link {
+  margin: 10px;
+  font-weight: 700;
+  color: var(--col-dark);
+  transition: var(--transition);
+}
+
+.navbar-nav .nav-link.active {
+  background-color: var(--col-brand);
+  border-radius: 50px;
+}
+
+.navbar-brand {
+  display: flex;
+  flex-direction: row;
+  margin-top: 7px;
+  font-weight: 700;
+}
+
+.main-logo {
+  margin-left: 10px;
+  height: 30px;
+}
+
+/* BUTTONS */
+.btn {
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 50px;
+  padding: 10px 24px;
+}
+
+.btn-buy {
+  width: 200px;
+  background-color: var(--col-brand);
+  border-color: var(--col-brand);
+  outline: none;
+}
+
+.btn-buy:hover {
+  background-color: var(--col-brand-light);
+  border-color: var(--col-brand-light);
+  color: white;
+}
+
+.btn-abt {
+  width: 150px;
+  background-color: white;
+  border: none;
+  color: black;
+  outline: none;
+}
+
+.btn-abt:hover {
+  background-color: rgb(207, 207, 207);
+  color: white;
+}
+
+.btn-order {
+  background-color: var(--col-brand);
+  border: none;
+  border-radius: 20px;
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+}
+
+.btn-order:hover {
+  background-color: var(--col-brand-light);
+  color: white;
+}
+
+.btn-checkout {
+  background-color: var(--col-brand);
+  border-color: var(--col-brand);
+  outline: none;
+  margin-top: -5px;
+}
+
+.btn-checkout:hover {
+  background-color: var(--col-brand-light);
+  border-color: var(--col-brand-light);
+  color: white;
+}
+
+/* HOME */
+#home {
+  background: linear-gradient(rgba(223,175,112,0.65), rgba(233,194,143,0));
+}
+
+/* ORDER */
+.list-group-item {
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order-actions {
+  display: flex;
+  align-items: center;
+}
+
+.order-number {
+  margin: 0 10px;
+  margin-left: 18px;
+}
+
+.checkout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkout button {
+  margin-left: 15px;
+}
+
+/* FOOTER (ABOUT) */
+#about {
+  background: linear-gradient(rgba(233,194,143,0), rgba(223,175,112,0.65));
+}
+
+#about .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about .container h5 {
+  margin-top: 20px;
+  margin-bottom: 15px; /* Menambahkan jarak antar baris */
+}

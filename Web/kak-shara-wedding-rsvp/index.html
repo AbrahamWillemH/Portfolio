@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shara & Yohan's Wedding RSVP</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+	<div class ='container'>
+		<div class = 'infoText'>
+			<h3>Shara & Yohan's</h3>
+			<h4>Wedding RSVP</h4>
+			<p>You're invited to our wedding!</p>
+			<p>Kami tidak sabar menunggu hari spesial kami bersama</p>
+			<p>Bapak/Ibu/Saudara/i, </p>
+			<p>Silakan konfirmasi kehadiran melalui form RSVP di bawah ini.</p>
+		</div>
+		<form action="https://sheetdb.io/api/v1/5ggv6s2te2ejm" method="POST" id="sheetdb-form">
+			<input type="text" id="data[nama]" name="Nama" class='nameInput' placeholder="Nama"><br>
+			<select type ='text' name="Kehadiran" class="kehadiranBtn" id="data[kehadiran]">
+				<option value="" disabled selected hidden>Kehadiran</option>
+				<option value="Hadir">Hadir</option>
+				<option value="Tidak Hadir">Tidak Hadir</option>
+			</select>
+			<select type ='text' name="Jumlah-Tamu" id="data[jumlahTamu]" class="jumlahTamuBtn">
+				<option value="" disabled selected hidden>Jumlah Tamu</option>
+				<option value="1">1 Orang</option>
+				<option value="2">2 Orang</option>
+			</select>
+			<img src="arrow.png" alt="Panah" class='arrow'></img>
+			<img src="arrow.png" alt="Panah" class='arrow2'></img>
+			<button type='submit' class="submitBtn">Submit</button>
+		</form>
+		<div class="information">
+			<button class="gift"><img src="gift.png">Gift!</button>
+			<div class="popup" id="giftpopup">
+				<div class="popupContent">
+					<span class="popupClose">&times;</span>
+					<h2>Thank You for Your Gift!</h2>
+					<br>
+					<h3>Alamat Wedding Gift</h3>
+					<p>Jl. Cermebarat 6 No. 7A, Gilingan,</p>
+					<p>Banjarsari, Surakarta</p>
+					<br>
+					<h3>Nomor Rekening</h3>
+					<p>5135294150</p>
+					<p>Bank BCA</p>
+					<p>a.n Yohan</p>
+				</div>
+			</div>
+			<button class="location" onclick="redirectToURL('https://rb.gy/l54pwk')">
+				<img src="location.png" alt="Location">
+				Location
+			</button>			
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

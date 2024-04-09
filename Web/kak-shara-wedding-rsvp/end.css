@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'titleFont';
+    src: url('The\ Heart\ of\ Everything\ Demo.ttf') format('truetype');
+  }
+  
+@font-face {
+    font-family: 'titleFont2';
+    src: url('Adamina-Regular.ttf') format('truetype');
+  }
+
+@media (min-width: 768px){
+  body{
+    margin: 0px
+    }
+    .container {
+    position: relative;
+    align-items: center;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(211, 173, 126);
+    background-image: url(background-for-desktop.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+    
+    .container h1 {
+        font-family: 'titleFont';
+        font-weight: lighter;
+        font-size: 42px;
+    }
+    
+    .container p {
+        font-family: 'titleFont2';
+        font-size: medium;
+    }
+    
+    .confetti1 {
+        max-width: 130px;
+        max-height: 130px;
+        position: absolute;
+        top: 270px;
+        right: 400px;
+    }
+    
+    .confetti2 {
+        max-width: 130px;
+        max-height: 130px;
+        position: absolute;
+        left: 420px;
+        top: 270px;
+    }
+}
+
+@media only screen and (max-device-width: 480px){
+  body{
+    margin: 0px
+    }
+    .container {
+    position: relative;
+    align-items: center;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(211, 173, 126);
+    background-image: url(background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+    
+    .container h1 {
+        font-family: 'titleFont';
+        font-weight: lighter;
+        font-size: 27px;
+    }
+    
+    .container p {
+        font-family: 'titleFont2';
+        font-size: 12px;
+    }
+    
+    .confetti1 {
+        max-width: 60px;
+        max-height: 60px;
+        position: absolute;
+        top: 410px;
+        right: 60px;
+    }
+    
+    .confetti2 {
+      max-width: 60px;
+      max-height: 60px;
+      position: absolute;
+      top: 410px;
+      left: 70px;
+  }
+}

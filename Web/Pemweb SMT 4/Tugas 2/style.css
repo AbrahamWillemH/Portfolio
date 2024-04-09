@@ -1,0 +1,60 @@
+body, h1, p, table, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #700002;
+    color: #fff;
+    padding: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+main {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+button {
+    background-color: rgb(130, 0, 28);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(180, 0, 28);
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 2px solid #000000;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: rgb(130, 0, 28);
+    color: #fff;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+td[colspan="2"] {
+    height: 50px;
+}
